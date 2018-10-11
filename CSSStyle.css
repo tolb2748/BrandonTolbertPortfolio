@@ -1,0 +1,96 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 1, 2018, 8:41:30 PM
+    Author     : Brandon
+*/
+
+div { outline: 1px solid red !important; }
+
+body, html {
+    height: 100%;
+}
+
+/*/////Image classes////////////////////////////////////////////////////////// */
+.large{
+    background-image: url("images/Picture1.png");
+    
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.medium{
+    margin: 0% auto;
+    width: 50%;
+    
+}
+
+/*//// Text Classes //////////////////////////////////////////////////////////*/
+
+.largeText{
+    font-family: verdana;
+    font-size: 140%
+}
+.mediumText{
+    font-family: monospace;
+    font-size: 120%;
+    color: black;
+    font-weight: bolder;
+}
+
+.FlashyText{
+    font-family: verdana;
+    font-size: 120%;
+    color: silver;
+}
+
+/*/////Education Flex Container////////////////////////////////////////////////////////// */
+#caption{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    font-family: cursive;
+    font-weight: 700; 
+    color: darkred;
+    font-size: 200%;
+    border-bottom: black;
+    border-bottom-width: thick;
+    
+}
+
+
+#Education, #Career{
+    display: flex;
+    align-content: center;
+}
+
+#Mechanical, #Logo{
+    
+    width: 50%;
+    margin: 5% 0 auto;
+    text-align: center;
+    color: silver;
+
+}
+
+#Petroleum{
+    width: 50%;
+    margin: 5% 0 auto;
+    text-align: center;
+    color: silver;
+
+}
+
+.jobDescription{
+    width: 50%;
+    margin: 5% 0;
+    text-align: left;
+    color: silver;
+}
