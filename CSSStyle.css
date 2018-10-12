@@ -71,18 +71,10 @@ body, html {
     align-content: center;
 }
 
-#Mechanical, #Logo{
+#Mechanical, #Petroleum, #Logo{
     
     width: 50%;
-    margin: 5% 0 auto;
-    text-align: center;
-    color: silver;
-
-}
-
-#Petroleum{
-    width: 50%;
-    margin: 5% 0 auto;
+    margin: 2% 0 auto;
     text-align: center;
     color: silver;
 
@@ -90,7 +82,9 @@ body, html {
 
 .jobDescription{
     width: 50%;
-    margin: 5% 0;
+    margin: 2% 0;
     text-align: left;
     color: silver;
 }
+
+
