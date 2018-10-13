@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 13, 2018, 10:58:50 AM
+    Author     : Brandon
+*/
+
+div { outline: 1px solid red !important; }
+#MEMS{
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.MEMSummary{
+    width: 70%;
+}
+
+.SideBar{
+    width: 30%;
+    font-family: serif;
+}
+
+.SideBar li{
+    border-left: 4px solid rgb(204, 204, 204);
+    margin: 3%;
+    color: rgb(80, 80, 80);
+    text-decoration: none solid rgb(80, 80, 80);
+    margin: 0px 0px 5px;
+    display: block;
+    padding: 5px 1px 5px 5px;
+}
+
+video{
+    width: 80%;
+}
+.v{
+    width: 1000px;
+    height: 1000px;
+    object-fit: none;
+}
