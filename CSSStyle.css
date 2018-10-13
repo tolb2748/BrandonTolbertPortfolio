@@ -50,6 +50,18 @@ body, html {
     color: silver;
 }
 
+/* WhoAmI Container///////////////////////////////////////////////////////////*/
+.WhoAmI{
+    width: 100%;
+    text-align: center;
+}
+
+.WhoAmI span{
+    font-size: 130%;
+    font-family: georgia, serif;
+        
+}
+
 /*/////Education Flex Container////////////////////////////////////////////////////////// */
 #caption{
     position: absolute;
