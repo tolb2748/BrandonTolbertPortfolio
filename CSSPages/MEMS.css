@@ -8,21 +8,30 @@ and open the template in the editor.
     Author     : Brandon
 */
 
-div { outline: 1px solid red !important; }
+
+body{
+    background-color: gray;
+}
+
 #MEMS{
     
     display: flex;
     flex-wrap: wrap;
-    
+    margin: 0 10% 0% 10%;
+    background-color: white;
 }
 
 .MEMSummary{
-    width: 70%;
+    flex:2;
+    border-left: gray solid thin;
+    padding: 0px 20px;
 }
 
 .SideBar{
-    width: 30%;
+    flex: .5;
+    width: 25%;
     font-family: serif;
+    
 }
 
 .SideBar li{
@@ -36,5 +45,5 @@ div { outline: 1px solid red !important; }
 }
 
 video{
-    width: 80%;
+    width: 100%;
 }
