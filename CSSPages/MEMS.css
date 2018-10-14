@@ -34,14 +34,19 @@ body{
     
 }
 
-.SideBar li{
+.SideBarOptions li{
     border-left: 4px solid rgb(204, 204, 204);
     margin: 3%;
     color: rgb(80, 80, 80);
     text-decoration: none solid rgb(80, 80, 80);
     margin: 0px 0px 5px;
     display: block;
-    padding: 5px 1px 5px 5px;
+    padding: 5px 10px 5px 5px;
+}
+
+.skillsList{
+    list-style-image: url("https://seelio.com/img/icon_tags.png");
+    display: compact ;
 }
 
 video{
