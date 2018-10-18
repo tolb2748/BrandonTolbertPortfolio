@@ -11,6 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="stylesheet" href="../CSSPages/MEMS.css">
+        <script src="../Javascript/javascript.js"></script>    
     </head>
     <body>
         <div id="MEMS">
@@ -55,17 +56,17 @@ and open the template in the editor.
                     <video controls>
                         <source class="v" src="../Video/MEMS_Videos/Mems_Intro_101318.mp4" >
                     </video>
-                    <div class="caption">
+                    <div class="caption" id = "caption1">
                         Operation demonstration
-                        <span class="hide-caption">×</span>
+                        <span class="hide-caption" onclick="hide('caption1');">×</span>
                     </div>
                 </div>
                 
                 <div class="imageSection">
                     <img class="Images" src="../images/MEMS_Images/RotationalActuator.JPG">
-                    <div class="caption">
+                    <div class="caption" id="caption2">
                         Rotational hydraulic Actuator Section Cut
-                        <span class="hide-caption">×</span>
+                        <span class="hide-caption" onclick="hide('caption2');">×</span>
                     </div>
                 </div>
                 
