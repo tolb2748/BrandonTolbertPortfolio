@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../CSSPages/Project.css">
+        <script src="../Javascript/javascript.js"></script>    
+    </head>
+    <body>
+        <div id="MEMS">
+<!--Side Bar////////////////////////////////////////////////////////////////////-->
+            <div class="SideBar">
+                <ul class="SideBarOptions">
+                    <li> <a href="../index.html"> Overview </a>  </li>
+                    <li><a href="../index.html#projectsSection"> Recent Projects </a></li>
+                    <li> Resume </li>
+                </ul>
+                <ul class="skillsList">
+                    <li>Excel VBA</li>
+                    <li>Data Analytics</li>
+                    <li>Reservoir Engineering</li>
+                </ul>
+            </div>
+
+<!--Star Summary/////////////////////////////////////////////////////////////-->
+            <div class="MEMSummary">
+                <h1>Evaluation of Economic Potential of the Delaware Basin</h1>
+                    <p>
+                        <strong>Situation:</strong> Evaluate a section of the Delaware
+                        Basin in terms of economic potential and develop an aerial map
+                        to determine sweet spots.
+                    </p>
+                    <p>
+                        <strong>Task:</strong> Analyze production data and develop 
+                        a NPV/acre heat map.
+                    </p>
+                    <p>
+                        <strong>Action:</strong> Determined EUR’s and drainage areas
+                        through decline curve analysis to get NPV/acre. For wells where 
+                        there was a lack of information, stochastic estimate using 
+                        distributions was applied. Using this information from 72 wells, 
+                        an aerial map was developed.
+                    </p>
+                    <p>
+                        <strong>Result:</strong> Determined profitable acreage 
+                        from the analysis. The results were validated by the drilling
+                        trend. Group received 2nd highest grade in the class out of 24 
+                        teams.
+
+<!--Videos and Pictures///////////////////////////////////////////////////////-->
+                <div class="imageSection">
+                    <img class="Images" src="../images/PECapstoneImages/PECapstone_DeclineCurve_101918.png">
+                    <div class="captionBelow" id="caption1">
+                       Shows a reciprocal rate vs cumulative oil production plot. 
+                       The end of infinite acting linear flow is indicated by the
+                       blue triangle.
+                        <span class="hide-caption" onclick="hide('caption1');">×</span>
+                    </div>
+                </div> 
+                
+                <div class="imageSection">
+                    <img class="Images" src="../images/PECapstoneImages/PECapstone_GORCurve_101918.png">
+                    <div class="captionBelow" id="caption2">
+                        Cumulative gas production vs. cumulative oil production 
+                        plot. Deviation from the constant GOR line indicates the 
+                        reservoir has hit the bubble point
+                        <span class="hide-caption" onclick="hide('caption2');">×</span>
+                    </div>
+                </div>
+
+                    
+                <div class="imageSection">
+                    <img class="Images" src="../images/PECapstoneImages/PECapstone_DrainageAreaDistribution_101819.png">
+                    <div class="captionBelow" id="caption3">
+                        Histogram distribution for drainage area
+                        <span class="hide-caption" onclick="hide('caption3');">×</span>
+                    </div>
+                </div>
+                    
+                <div class="imageSection">
+                    <img class="Images" src="../images/PECapstoneImages/PECapstone_DrainageAreaFit_101819.png">
+                        <div class="captionBelow" id="caption4">
+                            Log normal fit of drainage area distribution 
+                            <span class="hide-caption" onclick="hide('caption4');">×</span>
+                        </div>
+                </div>    
+                <div class="imageSection">
+                    <img class="Images" src="../images/PECapstoneImages/PECapstone_MonteCarlo_101918.png">
+                    <div class="captionBelow" id="caption5">
+                        Monte Carlo simulation for EUR values. P90, P50, and P10 values are shown
+                        <span class="hide-caption" onclick="hide('caption5');">×</span>
+                    </div>
+                </div>
+                <div class="imageSection">
+                    <img class="Images" src="../images/PECapstoneImages/PECapstone_AirealMap_101918.png">
+                    <div class="captionBelow" id="caption6">
+                        Bid value map of the a play in the Delaware Basin developed 
+                        from the stochastic analysis. Results suggest a “sweet spot”
+                        in the northeast region of the area. The physical drilling trend
+                        in the area agreed with our analysis!!!
+                        <span class="hide-caption" onclick="hide('caption6');">×</span>
+                    </div>
+                </div>                    
+            
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
