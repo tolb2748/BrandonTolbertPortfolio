@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../CSSPages/Project.css">
+        <script src="../Javascript/javascript.js"></script>    
+    </head>
+    <body>
+        <div id="MEMS">
+<!--Side Bar////////////////////////////////////////////////////////////////////-->
+            <div class="SideBar">
+                <ul class="SideBarOptions">
+                    <li> <a href="../index.html"> Overview </a>  </li>
+                    <li><a href="../index.html#projectsSection"> Recent Projects </a></li>
+                    <li> <a href="../PDFs/Tolbert-WebsiteResume-102218.pdf">Resume </a> </li>
+                </ul>
+                <ul class="skillsList">
+                    <li>Python</li>
+                    <li>Controls</li>
+                    <li>Optimization</li>
+                </ul>
+            </div>
+
+<!--Star Summary/////////////////////////////////////////////////////////////-->
+            <div class="MEMSummary">
+                <h1>Temperature Control of a SISO and MIMO System</h1>
+                    <p>
+                        <strong>Situation:</strong> Apply feedback control schemes
+                        in Python to control the temperature of a Arduino with two heaters
+                        and two temperature sensors.
+                    </p>
+                    <p>
+                        <strong>Task:</strong> Apply PID, Moving Horizon Estimation, and
+                        Model Predictive Control schemes to control the temperature of
+                        a two heater system.
+                    </p>
+                    <p>
+                        <strong>Action:</strong> Designed PID and model predictive control 
+                        (MPC) algorithms to drive system outputs to desired target temperatures.
+                    </p>
+                    <p>
+                        <strong>Result:</strong> Successfully controlled the temperature
+                        of a single and two heater system with control algorithms.
+
+<!--Videos and Pictures///////////////////////////////////////////////////////-->
+                <div class="imageSection">
+                    <img class="Images" src="../images/TCLabImages/Intro_TemperatureControlLab.PNG">
+                    <div class="captionBelow" id="caption1">
+                       Temperature control lab includes an Arduino, two heaters, and
+                       two temperature sensors.
+                        <span class="hide-caption" onclick="hide('caption1');">×</span>
+                    </div>
+                </div> 
+                <div class="videoSection"> 
+                    <video loop muted autoplay>
+                        <source class="v" src="../Video/TCLabVids/SISO_PIControl_102318.mp4">
+                    </video>
+                    <div class="caption" id = "caption1">
+                        Tuned PI controller performance of a single heater system (SISO).
+                        <span class="hide-caption" onclick="hide('caption1');">×</span>
+                    </div>
+                </div>
+                <div class="videoSection"> 
+                    <video loop muted autoplay>
+                        <source class="v" src="../Video/TCLabVids/MHE_SemiempiricalMHE_102418.mp4">
+                    </video>
+                    <div class="caption" id = "caption2">
+                        Moving Horizon Estimation for a two heater system. The MHE
+                        estimates parameters for a physics based model derived
+                        from ana energy balance.
+                        <span class="hide-caption" onclick="hide('caption2');">×</span>
+                    </div>
+                </div>
+                <div class="videoSection"> 
+                    <video loop muted autoplay>
+                        <source class="v" src="../Video/TCLabVids/MIMO_MHEMPCControl_102218.mp4">
+                    </video>
+                    <div class="caption" id = "caption3">
+                        Combined MHE and MPC controller performance of a two heater
+                        system (MIMO).
+                        <span class="hide-caption" onclick="hide('caption3');">×</span>
+                    </div>
+                </div>                 
+            
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
