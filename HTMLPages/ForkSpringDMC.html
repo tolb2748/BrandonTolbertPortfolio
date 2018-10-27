@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../CSSPages/Project.css">
+        <script src="../Javascript/javascript.js"></script>    
+    </head>
+    <body>
+        <div id="MEMS">
+<!--Side Bar////////////////////////////////////////////////////////////////////-->
+            <div class="SideBar">
+                <ul class="SideBarOptions">
+                    <li> <a href="../index.html"> Overview </a>  </li>
+                    <li><a href="../index.html#projectsSection"> Recent Projects </a></li>
+                    <li> <a href="../PDFs/Tolbert-WebsiteResume-102218.pdf">Resume </a> </li>
+                </ul>
+                <ul class="skillsList">
+                    <li>Excel VBA</li>
+                    <li>SolidWorks</li>
+                </ul>
+            </div>
+
+<!--Star Summary/////////////////////////////////////////////////////////////-->
+            <div class="MEMSummary">
+                <h1>Fatigue Analysis of a Fork Spring on a Suzuki Motorcyle</h1>
+                    <p>
+                        <strong>Situation:</strong> Design a telescoping front end
+                        loader to add three additional feet of reach to the Mahindra
+                        5540 4WD tractor arm.                        
+                    </p>
+                    <p>
+                        <strong>Task:</strong> Perform FEA analysis on a new telescoping
+                        boom attachment and propose a final design that can prove to be operable
+                        under maximum loading conditions.
+                    </p>
+                    <p>
+                        <strong>Action:</strong> Using Solidworks and Ansys software, finite 
+                        element analysis was applied to evaluate the strength, structural 
+                        integrity, and geometric stability of the telescoping boom
+                        under the worst case loading conditions.
+                    </p>
+                    <p>
+                        <strong>Result:</strong> Proposed a final design with a full
+                        bill of materials after FEA analysis.
+                    </p>
+
+<!--Videos and Pictures///////////////////////////////////////////////////////-->
+                <div class="imageSection">
+                    <img class="Images" src="../images/forkSpringImages/ForkSpring_Dimensions_102618.png">
+                    <div class="captionBelow" id="caption1">
+                        Shows the dimensions of the fork spring analyzed.
+                        <span class="hide-caption" onclick="hide('caption1');">×</span>
+                    </div>
+                </div> 
+                
+                <div class="imageSection">
+                    <img class="Images" src="../images/forkSpringImages/ForkSpring_FBDAndStressDiagram_102618.png">
+                    <div class="captionBelow" id="caption2">
+                    Shows the free body diagram of an axially loaded spring and 
+                    the resulting stress diagram of the spring wire. Note: the 
+                    worst case stress occurs on the inside of the coil spring. 
+                        <span class="hide-caption" onclick="hide('caption2');">×</span>
+                    </div>
+                </div>
+                <div class="imageSection">
+                    <img class="Images" src="../images/forkSpringImages/ForkSpring_MohrsCircle_102618.png">
+                    <div class="captionBelow" id="caption6">
+                    Shows Mohr's circle for the location of the worst case stress
+                    location on the inside of the coil
+                        <span class="hide-caption" onclick="hide('caption6');">×</span>
+                    </div>
+                </div>
+                    
+                <div class="imageSection">
+                    <img class="Images" src="../images/forkSpringImages/ForkSpring_AlternatingStress_102618.png">
+                    <div class="captionBelow" id="caption3">
+                    Shows the alternating stress diagram under at the worst case
+                    loading conditions
+                        <span class="hide-caption" onclick="hide('caption3');">×</span>
+                    </div>
+                </div>
+                <div class="imageSection">
+                    <img class="Images" src="../images/forkSpringImages/ForkSpring_SNCurve_102618.png">
+                        <div class="captionBelow" id="caption4">
+                        Shows the S-N curve derived for the spring and the worst 
+                        case loading condition
+                            <span class="hide-caption" onclick="hide('caption4');">×</span>
+                        </div>
+                </div>  
+                <div class="imageSection">
+                    <img class="Images" src="../images/forkSpringImages/ForkSpring_FatigueLines_102618.png">
+                    <div class="captionBelow" id="caption5">
+                        shows the alternate form of the fatigue diagram with the 
+                        current operating point. The plot suggests the life expectancy
+                        of the spring under the current operating conditions to be 
+                        560,000 cycles. The margin of safety suggested by the plot
+                        is -0.17.
+                        <span class="hide-caption" onclick="hide('caption5');">×</span>
+                    </div>
+                </div>
+  
+
+
+                <div class="imageSection">
+                    <img class="Images" src="../images/forkSpringImages/ForkSpring_LoadLine_102618.png">
+                    <div class="captionBelow" id="caption6">
+                    Shows the definition of the safety factor applied to the Modified Goodman Model
+                    for springs. The margin of safety suggested by the plot is -0.17.
+                        <span class="hide-caption" onclick="hide('caption6');">×</span>
+                    </div>
+                </div>
+
+                <div class="imageSection">
+                    <img class="Images" src="../images/forkSpringImages/ForkSpring_SolidWorksFEA_102618.png">
+                    <div class="captionBelow" id="caption6">
+                        Shows the stress distribution on the spring and the locations
+                        of the max and min stresses using SOLIDWORKS software. Note:
+                        the resulting max stress is almost identical to the theoretical
+                        calculations.
+                        <span class="hide-caption" onclick="hide('caption6');">×</span>
+                    </div>
+                </div>                     
+            
+            </div>
+            
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../CSSPages/Project.css">
+        <script src="../Javascript/javascript.js"></script>    
+    </head>
+    <body>
+        <div id="MEMS">
+<!--Side Bar////////////////////////////////////////////////////////////////////-->
+            <div class="SideBar">
+                <ul class="SideBarOptions">
+                    <li> <a href="../index.html"> Overview </a>  </li>
+                    <li><a href="../index.html#projectsSection"> Recent Projects </a></li>
+                    <li> <a href="../PDFs/Tolbert-WebsiteResume-102218.pdf">Resume </a> </li>
+                </ul>
+                <ul class="skillsList">
+                    <li>Excel VBA</li>
+                    <li>SolidWorks</li>
+                </ul>
+            </div>
+
+<!--Star Summary/////////////////////////////////////////////////////////////-->
+            <div class="MEMSummary">
+                <h1>Fatigue Analysis of a Cylinder Head Bolt on a Suzuki Motorcyle</h1>
+                    <p>
+                        <strong>Situation:</strong> Design a telescoping front end
+                        loader to add three additional feet of reach to the Mahindra
+                        5540 4WD tractor arm.                        
+                    </p>
+                    <p>
+                        <strong>Task:</strong> Perform FEA analysis on a new telescoping
+                        boom attachment and propose a final design that can prove to be operable
+                        under maximum loading conditions.
+                    </p>
+                    <p>
+                        <strong>Action:</strong> Using Solidworks and Ansys software, finite 
+                        element analysis was applied to evaluate the strength, structural 
+                        integrity, and geometric stability of the telescoping boom
+                        under the worst case loading conditions.
+                    </p>
+                    <p>
+                        <strong>Result:</strong> Proposed a final design with a full
+                        bill of materials after FEA analysis.
+                    </p>
+
+<!--Videos and Pictures///////////////////////////////////////////////////////-->
+                <div class="imageSection">
+                    <img class="Images" src="../images/BoltHeadImages/HeadBolt_FBD_102618.png">
+                    <div class="captionBelow" id="caption1">
+                        Shows the Mahindra 5530 4WD tractor and ML 263 front loader attachment.
+                        The proposed telescoping boom would replace the mechanical
+                        component circled on the front loader
+                        <span class="hide-caption" onclick="hide('caption1');">×</span>
+                    </div>
+                </div> 
+                
+                <div class="imageSection">
+                    <img class="Images" src="../images/BoltHeadImages/BoltHead_StressBlock_102618.png">
+                    <div class="captionBelow" id="caption2">
+                    Shows the superposition of stresses and the resulting stress
+                    element in the shank at the worst case stress condition.
+                        <span class="hide-caption" onclick="hide('caption2');">×</span>
+                    </div>
+                </div>
+                    
+                <div class="imageSection">
+                    <img class="Images" src="../images/BoltHeadImages/BoltHead_MohrsCircle_102618.png">
+                    <div class="captionBelow" id="caption3">
+                    Mohr’s circle for the worst case stress along the shank.
+                        <span class="hide-caption" onclick="hide('caption3');">×</span>
+                    </div>
+                </div>
+                <div class="imageSection">
+                    <img class="Images" src="../images/BoltHeadImages/BoltHead_OscillatingStress_102618.png">
+                    <div class="captionBelow" id="caption5">
+                        Shows the alternating stress diagram under the current loading
+                        conditions
+                        <span class="hide-caption" onclick="hide('caption5');">×</span>
+                    </div>
+                </div>
+                <div class="imageSection">
+                    <img class="Images" src="../images/BoltHeadImages/BoltHead_SNCurve_102618.png">
+                        <div class="captionBelow" id="caption4">
+                        Compares S-N curves between a standard Moore tensile test
+                        and the empirically derived S-N curve that includes fatigue factors
+                            <span class="hide-caption" onclick="hide('caption4');">×</span>
+                        </div>
+                </div>    
+
+                <div class="imageSection">
+                    <img class="Images" src="../images/BoltHeadImages/BoltHead_FatigueLines_102618.png">
+                    <div class="captionBelow" id="caption6">
+                    Shows a variety of different empirical fatigue lines (e.g. Soderberg
+                    Goodman, Gunn, Gerber, ect.) and the operating point.
+                        <span class="hide-caption" onclick="hide('caption6');">×</span>
+                    </div>
+                </div>
+                    
+                <div class="imageSection">
+                    <img class="Images" src="../images/BoltHeadImages/BoltHead_SafetyFactorDetermination_102618.png">
+                    <div class="captionBelow" id="caption6">
+                    Shows the definition of the safety factor applied to the Gunn Model.
+                        <span class="hide-caption" onclick="hide('caption6');">×</span>
+                    </div>
+                </div>
+                <div class="imageSection">
+                    <img class="Images" src="../images/BoltHeadImages/BotHead_SafetyFactors_102618.png">
+                    <div class="captionBelow" id="caption6">
+                    Shows the calculated safety factors under the current operating
+                    conditions for each fatigue model.
+                        <span class="hide-caption" onclick="hide('caption6');">×</span>
+                    </div>
+                </div>
+                <div class="imageSection">
+                    <img class="Images" src="../images/BoltHeadImages/BoltHead_SolidworksStress_102618.png">
+                    <div class="captionBelow" id="caption6">
+                        Shows the stress distribution on the bolt and the locations
+                        of the max and min stresses using SOLIDWORKS software. Note:
+                        the resulting max stress is almost identical to the theoretical
+                        calculations.
+                        <span class="hide-caption" onclick="hide('caption6');">×</span>
+                    </div>
+                </div>                     
+            
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
