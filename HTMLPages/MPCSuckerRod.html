@@ -33,30 +33,35 @@ and open the template in the editor.
             <div class="MEMSummary">
                 <h1>Model Predictive Control of a Rod Pump</h1>
                     <p>
-                        <strong>Situation:</strong> Develop a controan autonomous fiber 
-                        optic delivery system to make a connection between two 
-                        fiber optic cables in Deepwater offshore wells.
+                        <strong>Situation:</strong> Develop a control system to 
+                        control the fluid level height of a sucker rod system that
+                        takes into account rod pump, well, and reservoir dynamics.
                     </p>
                     <p>
-                        <strong>Task:</strong> Research the possible
-                        constraints and environmental conditions downhole and develop
-                        a set of hydraulic actuators to complete the connection process.
+                        <strong>Task:</strong> Design a model predictive controller (MPC)
+                        and moving horizon estimator (MHE) to automatically control fluid
+                        height in a sucker rod well.
                     </p>
                     <p>
-                        <strong>Action:</strong> Developed a hydraulic actuator to move up and down,
-                        a hydraulic actuator to rotate, and a hydraulic actuator to lock the tool in place.
-                        A centralizer was included in the final design.
+                        <strong>Action:</strong> Designed a moving horizon estimator
+                        to determine uncertain well parameters using available surface
+                        measurements. Developed an MHE/MPC control algorithm to adjust
+                        the stroking speed of a sucker rod pump to maintain fluid level
+                        above the pump
                     </p>
                     <p>
-                        <strong>Result:</strong> Finished third place in the prototype
-                        group of our senior design project
+                        <strong>Result:</strong> MHE/MPC provided the best control
+                        when compared against PI and pump-off control. Results from 
+                        this study were accepted to be published by Computers and Chemical
+                        Engineering Journal.
                     </p>
 
 <!--Videos and Pictures///////////////////////////////////////////////////////-->
+                
                 <div class="imageSection">
-                    <img class="Images" src="../images/MPCSuckerRodImages/ProjectSummary_MPCSuckerRod_101818.PNG">
-                    <div class="caption" id="caption2">
-                        Rotational hydraulic actuator section cut
+                    <img class="Images" src="../images/MPCSuckerRodImages/RodPump_Intro_102818.PNG">
+                    <div class="captionBelow" id="caption2">
+                        Summary of Rod pump, well, and reservoir dynamics.
                         <span class="hide-caption" onclick="hide('caption2');">×</span>
                     </div>
                 </div>
@@ -64,8 +69,11 @@ and open the template in the editor.
                     <video loop muted autoplay>
                         <source class="v" src="../Video/SuckerRodVids/MHE_Porosity_101818.mp4" >
                     </video>
-                    <div class="caption" id = "caption2">
-                        Operation demonstration
+                    <div class="captionBelow" id = "caption2">
+                        Moving Horizon Estimation of porosity from surface loading
+                        measurements and stroking speed. The Estimator is able to 
+                        closely approximate the true value of porosity as more data
+                        becomes available.
                         <span class="hide-caption" onclick="hide('caption2');">×</span>
                     </div>
                 </div>
@@ -73,64 +81,41 @@ and open the template in the editor.
                     <video loop muted autoplay>
                         <source class="v" src="../Video/SuckerRodVids/MHE_PorosityAndSkin_101818.mp4" >
                     </video>
-                    <div class="caption" id = "caption1">
-                        Operation demonstration
+                    <div class="captionBelow" id = "caption1">
+                        Moving Horizon Estimation of multiple reservoir parameters
+                        from surface loading measurements and stroking speed. The
+                        estimator converges to almost identical values of the true
+                        porosity and skin.
                         <span class="hide-caption" onclick="hide('caption1');">×</span>
                     </div>
                 </div>
-
- 
-                <div class="videoSection"> 
-                    <video controls autoplay>
-                        <source class="v" src="../Video/MEMS_Videos/Cropped_RotationalActuator_101418.mp4" >
+                 <div class="videoSection"> 
+                    <video loop muted autoplay>
+                        <source class="v" src="../Video/SuckerRodVids/TimerControl.mp4" >
                     </video>
-                    <div class="caption" id = "caption3">
-                        Rotational Actuator Demonstration
-                        <span class="hide-caption" onclick="hide('caption3');">×</span>
-                    </div>
-                </div>
-                <div class="imageSection">
-                    <img class="Images" src="../images/MEMS_Images/Actuator_VerticalCombined_101718.png">
-                    <div class="caption" id="caption4">
-                        Vertical hydraulic actuator section cut
-                        <span class="hide-caption" onclick="hide('caption4');">×</span>
+                    <div class="captionBelow" id = "caption1">
+                        Shows the controller performance of pump off control.
+                        <span class="hide-caption" onclick="hide('caption1');">×</span>
                     </div>
                 </div>
                 <div class="videoSection"> 
-                    <video controls>
-                        <source class="v" src="../Video/MEMS_Videos/Cropped_VerticalActuator_101418.mp4" >
+                    <video loop muted autoplay>
+                        <source class="v" src="../Video/SuckerRodVids/PI_MHE.mp4" >
                     </video>
-                    <div class="caption" id = "caption5">
-                         Vertical Actuator Demonstration
-                        <span class="hide-caption" onclick="hide('caption5');">×</span>
+                    <div class="captionBelow" id = "caption1">
+                        Shows the controller performance of PI control.
+                        <span class="hide-caption" onclick="hide('caption1');">×</span>
                     </div>
-                </div>  
-                <div class="imageSection">
-                    <img class="Images" src="../images/MEMS_Images/Actuator_CombinedLocking_101718.png">
-                    <div class="caption" id="caption6">
-                        Locking hydraulic actuator Assembly and Section Cut
-                        <span class="hide-caption" onclick="hide('caption6');">×</span>
-                    </div>
-                </div>   
+                </div>
                 <div class="videoSection"> 
-                    <video controls>
-                        <source class="v" src="../Video/MEMS_Videos/Cropped_LockingDevice_101418.mp4" >
+                    <video loop muted autoplay>
+                        <source class="v" src="../Video/SuckerRodVids/MPCMHE.mp4" >
                     </video>
-                    <div class="caption" id = "caption7">
-                         Locking Actuator Demonstration
-                        <span class="hide-caption" onclick="hide('caption7');">×</span>
+                    <div class="captionBelow" id = "caption1">
+                        shows the MHE and MPC controller performance.
+                        <span class="hide-caption" onclick="hide('caption1');">×</span>
                     </div>
-                </div>           
-                <div class="videoSection"> 
-                    <video controls>
-                        <source class="v" src="../Video/MEMS_Videos/RevolvingDoor.mp4" >
-                    </video>
-                    <div class="caption" id = "caption8">
-                         Revolving Door Demonstration
-                        <span class="hide-caption" onclick="hide('caption8');">×</span>
-                    </div>
-                </div>                     
-            
+                </div>         
             </div>
             
         </div>
