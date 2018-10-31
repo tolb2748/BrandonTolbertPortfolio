@@ -33,30 +33,29 @@ and open the template in the editor.
                 <h1>Automation of Liquid Level Control Through PID Controller 
                     Optimization</h1>
                     <p>
-                        <strong>Situation:</strong> Develop an autonomous fiber 
-                        optic delivery system to make a connection between two 
-                        fiber optic cables in Deepwater offshore wells.
+                        <strong>Situation:</strong> Develop a control algorithm
+                        to control the fluid level of a pump fed system for a pond.
                     </p>
                     <p>
-                        <strong>Task:</strong> Research the possible
-                        constraints and environmental conditions downhole and develop
-                        a set of hydraulic actuators to complete the connection process.
+                        <strong>Task:</strong> Develop a PID controller in Python to control
+                        the fluid level height of a two tank gravity drainage system with
+                        an in-line pump. Use optimization techniques to tune the controller.
                     </p>
                     <p>
-                        <strong>Action:</strong> Developed a hydraulic actuator to move up and down,
-                        a hydraulic actuator to rotate, and a hydraulic actuator to lock the tool in place.
-                        A centralizer was included in the final design.
+                        <strong>Action:</strong> Built Process models from fundamentals
+                        and coded PID controller. Optimized controller by regression of parameters
+                        of an empirical model.
                     </p>
                     <p>
-                        <strong>Result:</strong> Finished third place in the prototype
-                        group of our senior design project
+                        <strong>Result:</strong> Received an A+ on the project.
                     </p>
 
 <!--Videos and Pictures///////////////////////////////////////////////////////-->
                 <div class="imageSection">
                     <img class="Images" src="../images/liquidLevelControImagesl/PID_PumpFedSystemGardenPonds_102618.png">
-                    <div class="caption" id="caption2">
-                        Rotational hydraulic actuator section cut
+                    <div class="captionBelow" id="caption2">
+                        Shows the process model of the pump fed system. Valves are
+                        used to simulate pressure loss in the lines.
                         <span class="hide-caption" onclick="hide('caption2');">×</span>
                     </div>
                 </div>
@@ -64,15 +63,17 @@ and open the template in the editor.
                     <video loop muted autoplay>
                         <source class="v" src="../Video/LiquidLevelControl/TankLevel_StepTest_102618.mp4" >
                     </video>
-                    <div class="caption" id = "caption1">
-                        Operation demonstration
+                    <div class="captionBelow" id = "caption1">
+                        Shows a doublet test of the process model.
                         <span class="hide-caption" onclick="hide('caption1');">×</span>
                     </div>
                 </div>
                 <div class="imageSection">
                     <img class="Images" src="../images/liquidLevelControImagesl/FOPDT_OptimizationFit_102618.png">
-                    <div class="caption" id="caption2">
-                        Rotational hydraulic actuator section cut
+                    <div class="captionBelow" id="caption2">
+                        Minimization of the sum of squared errors is applied to fit a FOPDT model to the 
+                        step response of tank 2. Parameters acquired from the process model are used
+                        to tune the PID controller.
                         <span class="hide-caption" onclick="hide('caption2');">×</span>
                     </div>
                 </div> 
@@ -80,8 +81,9 @@ and open the template in the editor.
                     <video loop muted autoplay>
                         <source class="v" src="../Video/LiquidLevelControl/PID_OptimizedMethod_102618.mp4" >
                     </video>
-                    <div class="caption" id = "caption3">
-                        Rotational Actuator Demonstration
+                    <div class="captionBelow" id = "caption3">
+                        Shows the controller performance using the tuning parameters
+                        from optimization.
                         <span class="hide-caption" onclick="hide('caption3');">×</span>
                     </div>
                 </div>
@@ -89,8 +91,8 @@ and open the template in the editor.
                     <video loop muted autoplay>
                         <source class="v" src="../Video/LiquidLevelControl/PID_tuned_102618.mp4" >
                     </video>
-                    <div class="caption" id = "caption5">
-                         Vertical Actuator Demonstration
+                    <div class="captionBelow" id = "caption5">
+                         Shows the controller response with slight tuning
                         <span class="hide-caption" onclick="hide('caption5');">×</span>
                     </div>
                 </div>                

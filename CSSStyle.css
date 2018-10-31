@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : Brandon
 */
 
-div { outline: 1px solid red !important; }
+
 
 body, html {
     height: 100%;
@@ -35,7 +35,8 @@ body, html {
 
 .largeText{
     font-family: verdana;
-    font-size: 140%
+    font-size: 130%;
+    color: black;
 }
 .mediumText{
     font-family: monospace;
@@ -47,13 +48,17 @@ body, html {
 .FlashyText{
     font-family: verdana;
     font-size: 120%;
-    color: silver;
+    color: black;
+    font-weight: bolder;
 }
 
 /* WhoAmI Container//////////////////////////////////////////////////////////*/
 .WhoAmI{
     width: 100%;
     text-align: center;
+    background-image: linear-gradient(to bottom,#f8f8f8,#e7e7e7);
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 .singleColumn{
     width: 100%;
@@ -84,18 +89,20 @@ body, html {
 }
 
 /* SectionContainers//////////////////////////////////////////////////////////*/
-#Education, #Career, #Projects{
+#Education, #Career, #Projects, #Connection{
+    padding-top: 2%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
 }
 
 .SectionHeaders{
     width: 100%;
-    margin-top: 2%;
-    font-family: "gotham normal";
+    /* margin-top: 0; */
+    font-family: gotham normal;
     font-size: 180%;
-    text-align: center;    
+    text-align: center;
 }
 
 .SectionHeaders span{
@@ -125,5 +132,17 @@ body, html {
     color: silver;
 }
 
+.qoute{
+    font-style: italic;
+    text-shadow: 0 1px 0 #fff;
+    font-size: 135%;
+    color: #7a8fa3;
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+    margin: 2%;
+    width: 100%;
+    
+}
 
 
