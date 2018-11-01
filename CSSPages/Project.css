@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : Brandon
 */
 
-div { outline: 1px solid red !important; }
+/*div { outline: 1px solid red !important; } */
 
 body{
     background-color: gray;

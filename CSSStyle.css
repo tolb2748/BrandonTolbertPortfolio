@@ -29,6 +29,7 @@ body, html {
     margin: 0% auto;
     width: 50%;
     
+    
 }
 
 /*//// Text Classes //////////////////////////////////////////////////////////*/
@@ -64,7 +65,8 @@ body, html {
     width: 100%;
     margin-top: 3%;
     text-align: center;
-    
+    color: #555;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.75);
 }
 
 .WhoAmI span{
@@ -97,6 +99,9 @@ body, html {
     justify-content: center;
 }
 
+#Projects{
+    background-image: linear-gradient(to bottom,#f8f8f8,#e7e7e7);
+}
 .SectionHeaders{
     width: 100%;
     /* margin-top: 0; */

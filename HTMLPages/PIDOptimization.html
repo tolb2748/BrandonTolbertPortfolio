@@ -23,8 +23,9 @@ and open the template in the editor.
                     <li> <a href="../PDFs/Tolbert-WebsiteResume-102218.pdf"> Resume </a> </li>
                 </ul>
                 <ul class="skillsList">
-                    <li>SolidWorks</li>
-                    <li>Ansys</li>              
+                    <li>Python</li>
+                    <li>Controls</li>
+                    <li>Optimization</li>
                 </ul>
             </div>
 
@@ -37,12 +38,12 @@ and open the template in the editor.
                         to control the fluid level of a pump fed system for a pond.
                     </p>
                     <p>
-                        <strong>Task:</strong> Develop a PID controller in Python to control
+                        <strong>Task:</strong> Develop a PID controller in python to control
                         the fluid level height of a two tank gravity drainage system with
                         an in-line pump. Use optimization techniques to tune the controller.
                     </p>
                     <p>
-                        <strong>Action:</strong> Built Process models from fundamentals
+                        <strong>Action:</strong> Built process models from fundamentals
                         and coded PID controller. Optimized controller by regression of parameters
                         of an empirical model.
                     </p>
@@ -53,38 +54,38 @@ and open the template in the editor.
 <!--Videos and Pictures///////////////////////////////////////////////////////-->
                 <div class="imageSection">
                     <img class="Images" src="../images/liquidLevelControImagesl/PID_PumpFedSystemGardenPonds_102618.png">
-                    <div class="captionBelow" id="caption2">
+                    <div class="captionBelow" id="caption1">
                         Shows the process model of the pump fed system. Valves are
                         used to simulate pressure loss in the lines.
-                        <span class="hide-caption" onclick="hide('caption2');">×</span>
+                        <span class="hide-caption" onclick="hide('caption1');">×</span>
                     </div>
                 </div>
                 <div class="videoSection"> 
                     <video loop muted autoplay>
                         <source class="v" src="../Video/LiquidLevelControl/TankLevel_StepTest_102618.mp4" >
                     </video>
-                    <div class="captionBelow" id = "caption1">
+                    <div class="captionBelow" id = "caption2">
                         Shows a doublet test of the process model.
-                        <span class="hide-caption" onclick="hide('caption1');">×</span>
+                        <span class="hide-caption" onclick="hide('caption2');">×</span>
                     </div>
                 </div>
                 <div class="imageSection">
                     <img class="Images" src="../images/liquidLevelControImagesl/FOPDT_OptimizationFit_102618.png">
-                    <div class="captionBelow" id="caption2">
+                    <div class="captionBelow" id="caption3">
                         Minimization of the sum of squared errors is applied to fit a FOPDT model to the 
                         step response of tank 2. Parameters acquired from the process model are used
                         to tune the PID controller.
-                        <span class="hide-caption" onclick="hide('caption2');">×</span>
+                        <span class="hide-caption" onclick="hide('caption3');">×</span>
                     </div>
                 </div> 
                 <div class="videoSection"> 
                     <video loop muted autoplay>
                         <source class="v" src="../Video/LiquidLevelControl/PID_OptimizedMethod_102618.mp4" >
                     </video>
-                    <div class="captionBelow" id = "caption3">
+                    <div class="captionBelow" id = "caption4">
                         Shows the controller performance using the tuning parameters
                         from optimization.
-                        <span class="hide-caption" onclick="hide('caption3');">×</span>
+                        <span class="hide-caption" onclick="hide('caption4');">×</span>
                     </div>
                 </div>
                 <div class="videoSection"> 
@@ -92,7 +93,7 @@ and open the template in the editor.
                         <source class="v" src="../Video/LiquidLevelControl/PID_tuned_102618.mp4" >
                     </video>
                     <div class="captionBelow" id = "caption5">
-                         Shows the controller response with slight tuning
+                         Shows the controller response with slight tuning.
                         <span class="hide-caption" onclick="hide('caption5');">×</span>
                     </div>
                 </div>                
